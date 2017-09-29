@@ -20,7 +20,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This option controls if the timer is reset after every successful
-    | visit to a page with the reauthorization middleware.
+    | visit to a page with the reauthenticate middleware.
     |
     */
 

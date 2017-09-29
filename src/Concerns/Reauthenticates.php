@@ -11,13 +11,13 @@ trait Reauthenticates
      * @param string $password
      * @return string|bool
      */
-    protected function checkReauthorizationPassword($guess, $password)
+    protected function checkReauthenticationPassword($guess, $password)
     {
         //good password
         if (Hash::check($guess, $password)) {
 
             //reset timer
-            $this->resetReauthorizationTimer();
+            $this->resetReauthenticationTimer();
 
             //send to requested page
             return session()->get('reauthenticate.requested_url', '/');
@@ -30,7 +30,7 @@ trait Reauthenticates
     /**
      * @return void
      */
-    protected function resetReauthorizationTimer()
+    protected function resetReauthenticationTimer()
     {
         session()->put('reauthenticate.last_authentication', strtotime('now'));
     }

@@ -70,8 +70,8 @@ This package offers a trait to use in your controller. This pattern gives you th
 
 The trait offers 2 methods: 
 
-- `checkReauthorizationPassword()` - Checks the entered password against the known hash, and returns the requested URL if successful. Returns `false` on failure.
-- `resetReauthorizationTimer()` - Stores the current time in the session as the last successful authentication. 
+- `checkReauthenticationPassword()` - Checks the entered password against the known hash, and returns the requested URL if successful. Returns `false` on failure.
+- `resetReauthenticationTimer()` - Stores the current time in the session as the last successful authentication. 
 
 Now we will use this trait in our controller.
 
@@ -118,10 +118,10 @@ If you would like to reset the timer in any of your other controllers, for examp
 
 ## Usage
 
-Using the reauthorization feature is incredibly easy. Simply add the middleware to either your routes:
+Using the reauthentication feature is incredibly easy. Simply add the middleware to either your routes:
 
 ```php
-Route::get('users', 'UserController')->middleware('reauthorization');
+Route::get('users', 'UserController')->middleware('reauthenticate');
 ```
 
 or your controllers:

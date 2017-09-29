@@ -21,7 +21,7 @@ class Reauthenticate
             //store the requested url
             $request->session()->put('reauthenticate.requested_url', $request->route()->uri());
 
-            //send to reauthorization page
+            //send to reauthentication page
             return redirect()->route('reauthenticate');
         }
 
