@@ -6,10 +6,10 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
-## [0.1.0] - 2017-09-28
+## [0.1.0] - 2017-09-29
 
 ### Added
-- Initial commit.
+- New package!
 
 [unreleased]: https://github.com/browner12/reauthenticate/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/browner12/reauthenticate
