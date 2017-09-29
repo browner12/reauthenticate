@@ -31,13 +31,15 @@ If you are using Laravel's automatic package discovery, you can skip this step.
 
 ## Publishing
 
+While we provide sensible defaults, if you would like to customize this package simply publish the config file with the following command. 
+
 ``` php
 php artisan vendor:publish --provider="browner12\reauthenticate\ReauthenticateServiceProvider"
 ```
 
 ## Wiring
 
-Let's start by adding our new middleware to our `App\Http\Kernel.php`.
+Let's start by adding our new middleware to `App\Http\Kernel.php`.
 
 ```php
 protected $routeMiddleware = [
@@ -60,13 +62,20 @@ Route::post('reauthenticate', 'ReauthenticateController@processReauthenticate')-
 
 Now let's make the associated controller:
 
-`php artisan make:controller ReauthenticateController`
+```sh
+php artisan make:controller ReauthenticateController
+```
 
 This package offers a trait to use in your controller. This pattern gives you the flexibility to customize the controllers as you need, while also controlling the pieces that are important for the normal package operation.
 
-```php
-<?php
+The trait offers 2 methods: 
 
+- `checkReauthorizationPassword()` - Checks the entered password against the known hash, and returns the requested URL if successful. Returns `false` on failure.
+- `resetReauthorizationTimer()` - Stores the current time in the session as the last successful authentication. 
+
+Now we will use this trait in our controller.
+
+```php
 namespace App\Http\Controllers;
 
 use browner12\reauthenticate\Concerns\Reauthenticates;
