@@ -23,7 +23,7 @@ Add the service provider to the providers array in `config/app.php`.
 
 ``` php
 'providers' => [
-    browner12\helpers\ReauthenticateServiceProvider::class,
+    browner12\reauthenticate\ReauthenticateServiceProvider::class,
 ];
 ```
 
