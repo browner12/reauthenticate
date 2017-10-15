@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace browner12\reauthenticate;
 
 use Closure;
 
