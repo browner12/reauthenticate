@@ -1,4 +1,6 @@
-<?php namespace browner12\reauthenticate;
+<?php
+
+namespace browner12\reauthenticate;
 
 use Illuminate\Support\ServiceProvider;
 
