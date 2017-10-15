@@ -49,7 +49,7 @@ protected $routeMiddleware = [
     'can'            => \Illuminate\Auth\Middleware\Authorize::class,
     'guest'          => \App\Http\Middleware\RedirectIfAuthenticated::class,
     'throttle'       => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-    'reauthenticate' => \App\Http\Middleware\Reauthenticate::class,
+    'reauthenticate' => \browner12\reauthenticate\Reauthenticate::class,
 ];
 ```
 
