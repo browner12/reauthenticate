@@ -101,7 +101,7 @@ class ReauthenticateController extends Controller
     public function processReauthenticate(Request $request)
     {
         //good password
-        if ($url = $this->checkAuthorizationPassword($request->get('password'), $request->user()->password)){
+        if ($url = $this->checkReauthenticationPassword($request->get('password'), $request->user()->password)){
         
             return redirect()->to($url);
         }
