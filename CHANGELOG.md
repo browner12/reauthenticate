@@ -6,6 +6,9 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+### Added
+- require `orchestra/testbench` for better testing.
+
 ## [0.1.1] - 2017-10-15
 
 ### Fixed
