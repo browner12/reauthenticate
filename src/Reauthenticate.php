@@ -4,11 +4,6 @@ namespace browner12\reauthenticate;
 
 use Closure;
 
-/**
- * Class Reauthenticate
- *
- * @package browner12\reauthenticate
- */
 class Reauthenticate
 {
     /**
@@ -16,7 +11,6 @@ class Reauthenticate
      *
      * @param  \Illuminate\Http\Request $request
      * @param  \Closure                 $next
-     *
      * @return mixed
      * @throws \RuntimeException
      */
@@ -42,12 +36,11 @@ class Reauthenticate
 
     /**
      * @param \Illuminate\Http\Request $request
-     *
      * @return int
      * @throws \RuntimeException
      */
-    public function lastAuth($request)
+    private function lastAuth($request)
     {
-        return (time() - $request->session()->get('reauthenticate.last_authentication', 0));
+        return time() - $request->session()->get('reauthenticate.last_authentication', 0);
     }
 }
