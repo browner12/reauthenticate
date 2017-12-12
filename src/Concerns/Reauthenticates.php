@@ -15,6 +15,7 @@ trait Reauthenticates
     {
         //good password
         if (Hash::check($guess, $password)) {
+
             //reset timer
             $this->resetReauthenticationTimer();
 
