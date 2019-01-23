@@ -20,7 +20,7 @@ class Reauthenticate
         if ($this->lastAuth($request) > config('reauthenticate.timeout', 3600)) {
 
             //store the requested url
-            $request->session()->put('reauthenticate.requested_url', $request->fullUrlWithQuery());
+            $request->session()->put('reauthenticate.requested_url', $request->fullUrl());
 
             //send to reauthentication page
             return redirect()->route('reauthenticate');
