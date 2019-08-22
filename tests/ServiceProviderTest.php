@@ -15,8 +15,6 @@ class ServiceProviderTest extends TestCase
 
         $this->assertEmpty($provider->register());
         $this->assertEmpty($provider->boot());
-
-        $this->assertNotEmpty($provider::$publishes);
     }
 
     public function testConfig()
