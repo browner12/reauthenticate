@@ -6,6 +6,11 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 
 ## [UNRELEASED]
 
+## [1.2.0] - 2020-09-10
+
+### Added
+- support Laravel 8
+
 ## [1.1.0] - 2020-03-08
 
 ### Added
@@ -30,7 +35,8 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - New package!
 
-[unreleased]: https://github.com/browner12/reauthenticate/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/browner12/reauthenticate/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/browner12/reauthenticate/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/browner12/reauthenticate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/browner12/reauthenticate/compare/v0.1.1...v1.0.0
 [0.1.1]: https://github.com/browner12/reauthenticate/compare/v0.1.0...v0.1.1
