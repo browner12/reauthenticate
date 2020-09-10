@@ -18,8 +18,8 @@
     ],
     "require": {
         "php": "^7.2",
-        "illuminate/console": "^6.0|^7.0|^8",
-        "illuminate/http": "^6.0|^7.0|^8"
+        "illuminate/console": "^6.0|^7.0|^8.0",
+        "illuminate/http": "^6.0|^7.0|^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
